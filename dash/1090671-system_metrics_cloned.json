@@ -1,0 +1,97 @@
+{
+  "dash": {
+    "read_only": false,
+    "graphs": [
+      {
+        "definition": {
+          "viz": "timeseries",
+          "requests": [
+            {
+              "q": "system.load.1{$scope}"
+            },
+            {
+              "q": "system.load.5{$scope}"
+            },
+            {
+              "q": "system.load.15{$scope}"
+            }
+          ]
+        },
+        "title": "System load"
+      },
+      {
+        "definition": {
+          "viz": "timeseries",
+          "requests": [
+            {
+              "q": "system.cpu.idle{$scope}, system.cpu.system{$scope}, system.cpu.iowait{$scope}, system.cpu.user{$scope}, system.cpu.stolen{$scope}, system.cpu.guest{$scope}"
+            }
+          ]
+        },
+        "title": "CPU usage (%)"
+      },
+      {
+        "definition": {
+          "viz": "timeseries",
+          "requests": [
+            {
+              "q": "max:system.cpu.iowait{$scope}"
+            }
+          ]
+        },
+        "title": "I/O wait (%)"
+      },
+      {
+        "definition": {
+          "viz": "timeseries",
+          "requests": [
+            {
+              "q": "sum:system.mem.usable{$scope},sum:system.mem.total{$scope}-sum:system.mem.usable{$scope}"
+            }
+          ]
+        },
+        "title": "System memory"
+      },
+      {
+        "definition": {
+          "viz": "timeseries",
+          "requests": [
+            {
+              "q": "sum:system.net.bytes_rcvd{$scope}"
+            },
+            {
+              "q": "sum:system.net.bytes_sent{$scope}"
+            }
+          ]
+        },
+        "title": "Network traffic (per sec)"
+      }
+    ],
+    "template_variables": [
+      {
+        "default": "*",
+        "prefix": null,
+        "name": "scope"
+      }
+    ],
+    "description": "A quick overview of key system metrics. (cloned)",
+    "title": "System - Metrics (cloned)",
+    "created": "2019-02-26T01:29:33.921855+00:00",
+    "new_id": "sgm-ist-y4k",
+    "id": 1090671,
+    "created_by": {
+      "disabled": false,
+      "handle": "sborsuk@iwa.com.mx",
+      "name": "Sergii",
+      "is_admin": true,
+      "role": null,
+      "access_role": "adm",
+      "verified": true,
+      "email": "sborsuk@iwa.com.mx",
+      "icon": "https://secure.gravatar.com/avatar/0f30b718840fedae41e065d3e5f8ae07?s=48&d=retro"
+    },
+    "modified": "2019-02-26T01:29:33.921855+00:00"
+  },
+  "url": "/dash/1090671/system---metrics-cloned",
+  "resource": "/api/v1/dash/1090671"
+}

@@ -1,0 +1,114 @@
+{
+  "dash": {
+    "read_only": false,
+    "graphs": [
+      {
+        "definition": {
+          "viz": "toplist",
+          "requests": [
+            {
+              "conditional_formats": [],
+              "style": {
+                "palette": "dog_classic"
+              },
+              "log_query": {
+                "index": "main",
+                "search": {
+                  "query": ""
+                },
+                "compute": {
+                  "aggregation": "count"
+                },
+                "groupBy": [
+                  {
+                    "facet": "@pri",
+                    "limit": 100
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "title": "Log count by @pri"
+      },
+      {
+        "definition": {
+          "viz": "toplist",
+          "requests": [
+            {
+              "conditional_formats": [],
+              "style": {
+                "palette": "dog_classic"
+              },
+              "log_query": {
+                "index": "main",
+                "search": {
+                  "query": ""
+                },
+                "compute": {
+                  "aggregation": "count"
+                },
+                "groupBy": [
+                  {
+                    "facet": "@outcome",
+                    "limit": 100
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "title": "Log count by @outcome"
+      },
+      {
+        "definition": {
+          "viz": "toplist",
+          "requests": [
+            {
+              "conditional_formats": [],
+              "style": {
+                "palette": "dog_classic"
+              },
+              "log_query": {
+                "index": "main",
+                "search": {
+                  "query": ""
+                },
+                "compute": {
+                  "aggregation": "count"
+                },
+                "groupBy": [
+                  {
+                    "facet": "@app",
+                    "limit": 100
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "title": "Log count by @app"
+      }
+    ],
+    "template_variables": [],
+    "description": "",
+    "title": "logs dashboard",
+    "created": "2019-01-29T02:11:22.727752+00:00",
+    "new_id": "dxa-err-bq9",
+    "id": 1059845,
+    "created_by": {
+      "disabled": false,
+      "handle": "sborsuk@iwa.com.mx",
+      "name": "Sergii",
+      "is_admin": true,
+      "role": null,
+      "access_role": "adm",
+      "verified": true,
+      "email": "sborsuk@iwa.com.mx",
+      "icon": "https://secure.gravatar.com/avatar/0f30b718840fedae41e065d3e5f8ae07?s=48&d=retro"
+    },
+    "modified": "2019-02-05T22:28:46.631298+00:00"
+  },
+  "url": "/dash/1059845/logs-dashboard",
+  "resource": "/api/v1/dash/1059845"
+}
