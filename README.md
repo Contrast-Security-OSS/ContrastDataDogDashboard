@@ -2,7 +2,7 @@
 
 ### Set up Contrast Protect logs collection
 
-You need to enable logs collection for Datadog Agent in `datadog.yaml`:
+You need to enable logs collection for Datadog Agent in `~/.datadog-agent/datadog.yaml` on other paltforms, please find the location of your config file [here](https://docs.datadoghq.com/agent/guide/agent-configuration-files/?tab=agentv6):
 ```
 logs_enabled: true
 ```
