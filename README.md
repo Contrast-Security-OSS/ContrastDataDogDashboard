@@ -28,7 +28,7 @@ More info: https://docs.datadoghq.com/logs/log_collection/?tab=tailexistingfiles
 * Expand the new pipeline and click Add Processor
 * Add a Grok Parser to the pipeline with the following parsing rule
 ```
-MyParsingRule %{data:data}pri=%{data:pri} src=%{ip:src} spt=%{number:spt} request=%{data:request} requestMethod=%{word:requestMethod} app=%{word:app} outcome=%{word:outcome}
+ContrastSecurityLogRule %{data:data}pri=%{data:pri} src=%{ip:src} spt=%{number:spt} request=%{data:request} requestMethod=%{word:requestMethod} app=%{data:app} outcome=%{word:outcome}
 ```
 
 ### Import Contrast Dashboard into DataDog
