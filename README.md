@@ -25,6 +25,7 @@ More info: https://docs.datadoghq.com/logs/log_collection/?tab=tailexistingfiles
 ### Create a Logs Processing Pipeline
 
 * Create a new pipeline in DataDog dashboard (Logs -> Configuration - > New Pipeline) 
+* Expand the new pipeline and click Add Processor
 * Add a Grok Parser to the pipeline with the following parsing rule
 ```
 MyParsingRule %{data:data}pri=%{data:pri} src=%{ip:src} spt=%{number:spt} request=%{data:request} requestMethod=%{word:requestMethod} app=%{word:app} outcome=%{word:outcome}
