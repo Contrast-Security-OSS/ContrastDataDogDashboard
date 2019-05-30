@@ -32,6 +32,8 @@ MyParsingRule %{data:data}pri=%{data:pri} src=%{ip:src} spt=%{number:spt} reques
 ```
 
 ### Import Contrast Dashboard into DataDog
+Your API key and Application keys can be found in Integrations -> APIs
+
 ```bash
 api_key=YOUR_API_KEY
 app_key=YOUR_APPLICATION_KEY
